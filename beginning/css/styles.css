@@ -1,0 +1,130 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    background-color: #F1EFE4;
+}
+h1, h2 {
+    font-family: "Merriweather", serif;
+    font-size: 1.8em;
+}
+h1 {
+    color: white;
+    background-color: #90B19B;
+    text-align: center;
+    padding:5px;
+}
+h3 {
+    font-family: "Merriweather", serif;
+}
+.text-regular {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+}
+.text-large {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+}
+a {
+    color:#D15BAD;
+    text-decoration: none;
+}
+a:hover {
+    color: #3B4A7A;
+}
+.text-white {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+.fa-brands {
+    color: #fff;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+#home .logo {
+    width: 150px;
+}
+.logo {
+    width: 100px;
+}
+.logo-white {
+    width: 100px;
+}
+.navbar-nav {
+    text-align: center;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #90B19B;
+    --bs-btn-border-color: #90B19B;
+    --bs-btn-hover-color: #D15BAD;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #D15BAD;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #D15BAD;
+    --bs-btn-active-border-color: #D15BAD;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #D15BAD;
+    --bs-btn-disabled-border-color: #D15BAD;
+    border-radius: var(--bs-border-radius-pill) !important;
+    padding: 0.4em 1.5em;
+    margin: 0.1em;
+}
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #D15BAD;
+    --bs-btn-border-color: #D15BAD;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #3B4A7A;
+    --bs-btn-hover-border-color: #3B4A7A;
+    --bs-btn-active-color: #3B4A7A;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #3B4A7A;
+    --bs-btn-disabled-color: #3B4A7A;
+    --bs-btn-disabled-bg: #fff;
+    --bs-btn-disabled-border-color: #3B4A7A;
+    border-radius: var(--bs-border-radius-pill) !important;
+    padding: 0.4em 1.5em;
+    margin: 0.1em;
+}
+.mint-bg {
+    background-color: #A8DADC;
+}
+.iris-bg {
+    background-color: #3B4A7A;
+}
+footer {
+    padding: 20px;
+}
+/* home */
+#home h1 {
+    color: black;
+    background-color: transparent;
+    text-align: left;
+}
+#hero {
+    background-image: url("../images/seams_creative_hero.jpg");
+    aspect-ratio: 1440 / 524;
+    background-size:100%;
+}
+#hero img {
+    width: 100%;
+}
+#ourCraft .card {
+    --bs-card-bg: none;
+    --bs-card-border-width: 0;
+}
+#ourCraft .card-img, #ourCraft .card-img-top {
+    border-radius: 10pt;
+    max-width: 426px;
+}
+#ourWork video {
+    border-radius: 10pt;
+    max-width: 150px;
+}
+.video-align {
+    align-content: center;
+    text-align: center;
+}
