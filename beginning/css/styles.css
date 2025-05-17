@@ -1,7 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
-    background-color: #F1EFE4;
+    /* background-color: #F1EFE4; */
+    background-color: FCF9F8;
 }
 h1, h2 {
     font-family: "Merriweather", serif;
