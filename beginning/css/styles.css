@@ -11,7 +11,8 @@ h1, h2 {
 h1 {
     color: white;
     /* background-color: #90B19B; */
-    background-color: #657c6d;
+    /* background-color: #657c6d; */
+    background-color: #789181;
     text-align: center;
     padding:5px;
 }
@@ -59,8 +60,8 @@ a:hover {
 }
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #657c6d;
-    --bs-btn-border-color: #657c6d;
+    --bs-btn-bg: #789181;
+    --bs-btn-border-color: #789181;
     --bs-btn-hover-color: #D15BAD;
     --bs-btn-hover-bg: white;
     --bs-btn-hover-border-color: #D15BAD;
