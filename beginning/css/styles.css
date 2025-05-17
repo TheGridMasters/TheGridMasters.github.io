@@ -4,11 +4,13 @@ body {
     /* background-color: #F1EFE4; */
     background-color: #FCF9F8;
 }
-h1, h2 {
+h2 {
     font-family: "Merriweather", serif;
     font-size: 1.8em;
 }
 h1 {
+    font-family: "Merriweather", serif;
+    font-size: 2.1em;
     color: white;
     /* background-color: #90B19B; */
     /* background-color: #657c6d; */
@@ -58,19 +60,19 @@ a:hover {
 .navbar-nav {
     text-align: center;
 }
-.btn-primary {
+ .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #789181;
-    --bs-btn-border-color: #789181;
-    --bs-btn-hover-color: #D15BAD;
-    --bs-btn-hover-bg: white;
-    --bs-btn-hover-border-color: #D15BAD;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #D15BAD;
-    --bs-btn-active-border-color: #D15BAD;
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #D15BAD;
-    --bs-btn-disabled-border-color: #D15BAD;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #90B19B;
+    --bs-btn-hover-border-color: #90B19B;
+    --bs-btn-active-color: #789181;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #90B19B;
+    --bs-btn-disabled-color: #789181;
+    --bs-btn-disabled-bg: #90B19B;
+    --bs-btn-disabled-border-color: #90B19B;
     border-radius: var(--bs-border-radius-pill) !important;
     padding: 0.4em 1.5em;
     margin: 0.1em;
@@ -125,7 +127,7 @@ footer {
 }
 #ourWork video {
     border-radius: 10pt;
-    max-width: 150px;
+    max-width: 230px;
 }
 .video-align {
     align-content: center;
