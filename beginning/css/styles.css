@@ -2,7 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
     /* background-color: #F1EFE4; */
-    background-color: FCF9F8;
+    background-color: #FCF9F8;
 }
 h1, h2 {
     font-family: "Merriweather", serif;
@@ -10,7 +10,8 @@ h1, h2 {
 }
 h1 {
     color: white;
-    background-color: #90B19B;
+    /* background-color: #90B19B; */
+    background-color: #657c6d;
     text-align: center;
     padding:5px;
 }
@@ -58,8 +59,8 @@ a:hover {
 }
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #90B19B;
-    --bs-btn-border-color: #90B19B;
+    --bs-btn-bg: #657c6d;
+    --bs-btn-border-color: #657c6d;
     --bs-btn-hover-color: #D15BAD;
     --bs-btn-hover-bg: white;
     --bs-btn-hover-border-color: #D15BAD;
