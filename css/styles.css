@@ -1,8 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
-    /* background-color: #F1EFE4; */
-    background-color: #FCF9F8;
+    background-color: #FCF9F8; /* Previous color #F1EFE4 */
 }
 h2 {
     font-family: "Merriweather", serif;
@@ -12,9 +11,7 @@ h1 {
     font-family: "Merriweather", serif;
     font-size: 2.1em;
     color: white;
-    /* background-color: #90B19B; */
-    /* background-color: #657c6d; */
-    background-color: #789181;
+    background-color: #789181; /* Previous color #90B19B */
     text-align: center;
     padding:5px;
 }
@@ -32,24 +29,28 @@ h3 {
 a {
     color:#D15BAD;
     text-decoration: none;
+    transition-duration: .4s;
 }
 a:hover {
     color: #3B4A7A;
+    transform: scale(1.1);
 }
-.text-white {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8em;
-    font-weight: 100;
+.logo-link {
+    transition-duration:unset;
+}
+.logo-link:hover {
+    transform:none;
 }
 .fa-brands {
     color: #fff;
+    padding:5px;
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
 }
 #home .logo {
     width: 150px;
+    margin: 10px;
 }
 .logo {
     width: 100px;
@@ -60,10 +61,10 @@ a:hover {
 .navbar-nav {
     text-align: center;
 }
- .btn-primary {
+.btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #789181;
-    --bs-btn-border-color: white;
+    --bs-btn-border-color: #789181;
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg: #90B19B;
     --bs-btn-hover-border-color: #90B19B;
@@ -75,7 +76,10 @@ a:hover {
     --bs-btn-disabled-border-color: #90B19B;
     border-radius: var(--bs-border-radius-pill) !important;
     padding: 0.4em 1.5em;
-    margin: 0.1em;
+    transition-duration: .4s;
+}
+.btn-primary:hover {
+  transform: scale(1.1);
 }
 .btn-secondary {
     --bs-btn-color: #fff;
@@ -92,7 +96,10 @@ a:hover {
     --bs-btn-disabled-border-color: #3B4A7A;
     border-radius: var(--bs-border-radius-pill) !important;
     padding: 0.4em 1.5em;
-    margin: 0.1em;
+    transition-duration: .4s;
+}
+.btn-secondary:hover {
+  transform: scale(1.1);
 }
 .mint-bg {
     background-color: #A8DADC;
@@ -103,33 +110,67 @@ a:hover {
 footer {
     padding: 20px;
 }
+.mail {
+  color: #fff;
+  transition: letter-spacing 0.3s;
+}
+.mail:hover {
+  letter-spacing: 0.05em;
+  color: #A8DADC;
+}
+.icon {
+  transition-duration: .4s;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
 /* home */
 #home h1 {
     color: black;
     background-color: transparent;
-    text-align: left;
+    margin-top: 160pt;
 }
 #hero {
     background-image: url("../images/seams_creative_hero.jpg");
-    aspect-ratio: 1440 / 524;
-    background-size:100%;
+    background-size: auto 250px;
+    background-position: top right;
+    margin-top: 40px;
+    background-color: #FCF9F8;
+    background-repeat: no-repeat;
+    min-height: 250px;
 }
-#hero img {
-    width: 100%;
-}
-#ourCraft .card {
+#home .card {
     --bs-card-bg: none;
     --bs-card-border-width: 0;
+    --bs-card-spacer-y: 0rem;
+    --bs-card-spacer-x: 0rem;
+    --bs-card-title-spacer-y: 1rem;
 }
-#ourCraft .card-img, #ourCraft .card-img-top {
+#home .card-img, #home .card-img-top {
     border-radius: 10pt;
     max-width: 426px;
+    margin: auto;
 }
-#ourWork video {
+#home video {
     border-radius: 10pt;
     max-width: 230px;
 }
-.video-align {
-    align-content: center;
-    text-align: center;
+/* media queries */
+@media (min-width: 768px) {
+    #home h1 { 
+        margin-top: 270px;
+        }  
+    #hero {
+        background-size: auto 300px;
+        min-height: 300px;
+    }
+}
+@media (min-width: 992px) { 
+    #home h1 { 
+        margin-top: 0;
+        } 
+    #hero {
+        background-size: auto 350px;
+        min-height: 350px;
+    }
 }
