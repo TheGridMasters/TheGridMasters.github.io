@@ -1,30 +1,31 @@
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     background-color: #FCF9F8; /* Previous color #F1EFE4 */
-}
-h2 {
-    font-family: "Merriweather", serif;
-    font-size: 1.8em;
 }
 h1 {
     font-family: "Merriweather", serif;
-    font-size: 2.1em;
+    font-size: 1.8rem;
     color: white;
     background-color: #789181; /* Previous color #90B19B */
     text-align: center;
     padding:5px;
 }
+h2 {
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+}
 h3 {
     font-family: "Merriweather", serif;
+    font-size: 1.3rem;
 }
 .text-regular {
     font-family: "Roboto", sans-serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 .text-large {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 a {
     color:#D15BAD;
@@ -49,7 +50,7 @@ a:hover {
     --bs-bg-opacity: 0;
 }
 #home .logo {
-    width: 150px;
+    width: 100px;
     margin: 10px;
 }
 .logo {
@@ -57,9 +58,6 @@ a:hover {
 }
 .logo-white {
     width: 100px;
-}
-.navbar-nav {
-    text-align: center;
 }
 .btn-primary {
     --bs-btn-color: #fff;
@@ -75,7 +73,7 @@ a:hover {
     --bs-btn-disabled-bg: #90B19B;
     --bs-btn-disabled-border-color: #90B19B;
     border-radius: var(--bs-border-radius-pill) !important;
-    padding: 0.4em 1.5em;
+    padding: 0.4rem 1.5rem;
     transition-duration: .4s;
 }
 .btn-primary:hover {
@@ -95,7 +93,7 @@ a:hover {
     --bs-btn-disabled-bg: #fff;
     --bs-btn-disabled-border-color: #3B4A7A;
     border-radius: var(--bs-border-radius-pill) !important;
-    padding: 0.4em 1.5em;
+    padding: 0.4rem 1.5rem;
     transition-duration: .4s;
 }
 .btn-secondary:hover {
@@ -106,9 +104,6 @@ a:hover {
 }
 .iris-bg {
     background-color: #3B4A7A;
-}
-footer {
-    padding: 20px;
 }
 .mail {
   color: #fff;
@@ -131,7 +126,7 @@ footer {
     margin-top: 160pt;
 }
 #hero {
-    background-image: url("../images/seams_creative_hero.jpg");
+    background-image: url(../images/seams_creative_hero.jpg);
     background-size: auto 250px;
     background-position: top right;
     margin-top: 40px;
@@ -155,11 +150,66 @@ footer {
     border-radius: 10pt;
     max-width: 230px;
 }
-/* media queries */
+#home section h2::before, #home section h3::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#home section:nth-of-type(2) h2::before{
+    background-image: url(../images/mesure-icon.svg);
+}
+#home section:nth-of-type(3) h2::before{
+    background-image: url(../images/sewing-machine-icon.svg);
+}
+#home section:nth-of-type(4) h3::before{
+    background-image: url(../images/needle-icon.svg);
+}
+.animation-base {
+      opacity: 0;
+      transform: translateY(30px); 
+      animation: fadeSlideUp 1.5s ease-out forwards;
+}
+.delay-1 {
+      animation-delay: 0.5s;
+}
+.delay-2 {
+      animation-delay: 1s;
+}
+.delay-3 {
+      animation-delay: 1.5s;
+}
+.delay-4 {
+      animation-delay: 2s;
+}
+@keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+/* Responsive */
+@media (min-width: 576px) {
+    #home .logo { 
+        width: 150px;
+        }
+}
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
-        }  
+        }
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
     #hero {
         background-size: auto 300px;
         min-height: 300px;
