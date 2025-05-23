@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Seams Creative</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="contactus">
+<!-- Navbar -->
+<header>
+    <div class="container py-1">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="logo-link" href="index.html"><img src="images/seams-creative-logo.svg" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <div class="d-grid gap-2 d-md-block"><a href="contactus.html" aria-current="page" class="btn btn-primary ms-2">Drop Us a Line</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>Contact & Quote Form</h1>
+</header>
+<!-- Main -->
+<section>
+    <div class="container py-5">
+        <p>We&apos;d love to hear from you! Whether you have a question, a custom project in mind, or would like a quote, please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
+        <p class="asterisk">means it&apos;s a required field — thanks for taking the time!</p>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="exampleFormControlInput2" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Last Name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="exampleFormControlInput3" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
+            </div>
+            <div class="col-md-6">
+                <label for="exampleFormControlInput4" class="form-label">Phone Number (optional):</label>
+                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="555-555-5555">
+            </div>
+            <div class="col-md-12">
+                <label for="exampleFormControlInput5" class="form-label">Company or Organization (optional):</label>
+                <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Company">
+            </div>
+            <!-- radio buttons -->
+            <fieldset class="col-md-6">
+                <legend class="text-large ps-0">Type of Inquiry:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        General Question
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Request a Quote
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Collaboration Inquiry
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Other
+                    </label>
+                </div>
+            </fieldset>
+            <!-- checkboxes -->
+            <fieldset class="col-md-6">
+                <legend class="text-large ps-0">Which service are you intested in?:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        Custom Embroidery
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault12">
+                        Digitizing
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label" for="flexCheckDefault13">
+                        Varsity Jackets / Patches
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                    <label class="form-check-label" for="flexCheckDefault14">
+                        Contract Sewing
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="form-check-label" for="flexCheckDefault15">
+                        Other / Not Sure
+                    </label>
+                </div>
+            </fieldset>
+            <!-- multiline textarea -->
+            <div class="mb-3">
+                <label for="tellus" class="form-label">Tell us about your project:</label>
+                <textarea class="form-control" id="tellus" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
+            </div>
+            <!-- list box -->
+            <fieldset class="mb-3">
+                <legend class="text-large ps-0">Preferred Delivery Timeline:</legend>
+                <ul class="list-group list-box">
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                        <label class="form-check-label px-3" for="firstRadio">No specific deadline</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                        <label class="form-check-label px-3" for="secondRadio">Extremely urgent - Within 1 week</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                        <label class="form-check-label px-3" for="thirdRadio">Urgent - Within 2 weeks</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fourthRadio">
+                        <label class="form-check-label px-3" for="fourthRadio">Within 1 month</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fifthRadio">
+                        <label class="form-check-label px-3" for="fifthRadio">Within 3 month</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="sixthRadio">
+                        <label class="form-check-label px-3" for="sixthRadio">Within 6 month</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="seventhRadio">
+                        <label class="form-check-label px-3" for="seventhRadio">More than 6 months</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <!-- multiline textarea -->
+            <div class="mb-3">
+                <label for="note" class="form-label">Additional Notes (optional):</label>
+                <textarea class="form-control" id="note" rows="7" placeholder="Free text field &#x2212; anything else we should know"></textarea>
+            </div>
+            <!-- drop down menu -->
+            <fieldset>
+                <legend for="source" class="form-label text-large">How did you hear about us? (optional):</label>
+                <select id="source" class="form-select" aria-label="Default select example">
+                    <option selected>Click or tap here</option>
+                    <option value="1">Google</option>
+                    <option value="2">instagram</option>
+                    <option value="3">Referral</option>
+                    <option value="4">Returning Customer</option>
+                    <option value="5">Other</option>
+                </select>
+            </fieldset>
+            <div class="d-grid gap-2 d-md-block text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container py-5">
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <p>P (Text regular size)</p>
+        <p class="text-regular">text-small</p>
+        <p class="text-large">text-large</p>
+        <a href="#">Link</a><br><br>
+
+        <p>For all of the buttons, please enclose it in a DIV to make the button responsive.</p>
+        <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">Primary Button</button></div><br>
+        <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-secondary">Secondary Button</button></div><br>
+        <div class="d-grid gap-2 d-md-block"><a href="#" class="btn btn-primary">Primary Link Button</a></div><br>
+        <div class="d-grid gap-2 d-md-block"><a href="#" class="btn btn-secondary">Secondary Link Button</a></div><br><br>
+        <div class="mint-bg py-5" ><p>mint-bg</p></div><br>
+        <div class="iris-bg py-5" ><p class="text-white">iris-bg and text-white</p></div><br>
+        <p>Please change page title around line 6</p>
+        <p>Please make your navigation menu link "active" (nav-link active) aroung line 35-50. This sample is "Home" active. (The other nav links are brighter color)</p>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="iris-bg">
+        <div class="container text-white fw-lighter fs-6 pt-4">
+        <div class="row">
+            <div class="col-12 col-lg-2 text-center text-lg-start order-1 order-lg-1 mb-4 mb-lg-0">
+                <a href="index.html"><img src="images/seams-creative-logo-white.svg" class="logo-white"></a>
+            </div>
+            <div class="col-12 col-lg-8 text-center order-2 order-lg-2">
+                <p>Custom Sewing · Embroidery · Digitizing · Patches &amp; More</p>
+                <p>📍 San Diego, CA |  ☎️ (858) 537-7898 | <a class="mail" href="mailto:info@seamscreative.com">✉️ info@seamscreative.com</a></p>
+            </div>
+            <div class="col-12 col-lg-2 order-last order-lg-3"></div>
+            <div class="col-12 col-lg-4 text-center text-lg-start order-4 order-lg-4"><p>Crafted with care. Stitched to last.</p></div>
+            <div class="col-12 col-lg-4 text-center fst-italic order-5 order-lg-5">
+                <p>&copy; Seams Creative All Rights Reserved</p>
+            </div>
+            <div class="col-12 col-lg-4 text-center text-lg-end fs-4 order-3 order-lg-last mb-4 mb-lg-0">
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
