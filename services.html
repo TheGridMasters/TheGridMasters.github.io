@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id="services">
 <!-- Navbar -->
 <header>
     <div class="container py-1">
@@ -33,12 +33,12 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a class="nav-link" ref="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="servcies.html">Services</a>
+                            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
@@ -47,7 +47,7 @@
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <div class="d-grid gap-2 d-md-block"><a href="#" class="btn btn-primary">Drop Us a Line</a></div>
+                            <div class="d-grid gap-2 d-md-block"><a href="contactus.html" class="btn btn-primary ms-2">Drop Us a Line</a></div>
                         </li>
                     </ul>
                 </div>
@@ -58,86 +58,60 @@
 </header>
 
 
-<!--Middle Section-->
-<section>
-    <div class="container py-5">
+<!--Services  Section-->
+
+    <section class="container py-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2>Digitizing</h2>
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+                <h2 style="padding: 15px 0 10px 0">Digitizing</h2>
                 <p>Digitizing is the first step in bringing your design to life through embroidery. We convert your image or logo into a digital embroidery file using expert software that maps each stitch precisely. Whether it’s a simple monogram or a complex logo, our team ensures it’s clean, balanced, and ready for stitching.</p>
                 <div class="text-end">
-                    <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">Click here for more info!</button></div><br>
+                    <div class="d-grid gap-2 d-md-block" style="padding-right: 30px;"><button type="button" class="btn btn-primary">Click here for more info!</button></div><br>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="images/delectables-cupcake.jpg" class="rounded float-end" alt="cupcake icon" width="600" height="500">
+            <div class="col-md-6 order-1 order-md-2 text-center">
+                <img src="images/delectables-cupcake.jpg" class="img-fluid rounded float-end" alt="cupcake icon" >
             </div>
         </div> 
-    </div>
+    </section>
 
-    <div class="container py-5">
+    <hr class="d-block d-md-none" style="height: 2px; background-color: #000;">
+
+    <section class="container py-5">
         <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-                <img src="images/trailblazer-jacket.jpg" class="rounded float-end" alt="cupcake icon" width="600" height="500">
-            </div>
-            <div class="col-md-6">
-                <h2>Custom Embroidery</h2>
+            <div class="col-md-6 order-2 order-md-2 text-center text-md-start">
+                <h2 style="padding: 15px 0 10px 0">Custom Embroidery</h2>
                 <p>Our custom embroidery service transforms clothing and accessories into one-of-a-kind pieces. You can bring your own design or work with us to create something new. We offer embroidery for apparel like jackets, caps, polos, and more—perfect for businesses, teams, events, or personal use.</p>
                 <div class="text-end">
-                    <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">Click here for more info!</button></div><br>
+                    <div class="d-grid gap-2 d-md-block" style="padding-right: 20px;"><button type="button" class="btn btn-primary">Click here for more info!</button></div><br>
                 </div>
             </div>
+            <div class="col-md-6 text-center order-1 order-md-1">
+                <img src="images/trailblazer-jacket.jpg" class="img-fluid rounded float-end" alt="cupcake icon">
+            </div>
         </div> 
-    </div>
+    </section>
+
+    <hr class="d-block d-md-none" style="height: 2px; background-color: #000;">
+
     
-    <div class="container py-5">
+    <section class="container py-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2>Varsity Jackets/ Patches</h2>
-                <p>We specialize in creating custom varsity jackets and patches that stand out. Whether it’s for schools, sports teams, or personal collections, we design and embroider high-quality patches that represent your milestones and identity. Jackets can be customized with names, logos, and unique designs for a timeless look.</p>
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+                <h2 style="padding: 15px 0 10px 0;">Varsity Jackets/ Patches</h2>
+                <p>We specialize in creating custom varsity jackets and patches that stand out. Whether it's for schools, sports teams, or personal collections, we design and embroider high-quality patches that represent your milestones and identity. Jackets can be customized with names, logos, and unique designs for a timeless look.</p>
                 <div class="text-end">
                     <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">Click here for more info!</button></div><br>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="images/embrodery-machine.jpg" class="rounded float-end" alt="cupcake icon" width="600" height="500">
+            <div class="col-md-6 order-1 order-md-2 text-center">
+                <img src="images/embrodery-machine.jpg" class="img-fluid rounded float-end" alt="cupcake icon" width="600" height="500">
             </div>
         </div> 
-    </div>
-</section>
-
+    </section>
 
 <!--Form-->
 
-<section class="mint-bg py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Contact Us</h2>
-                <p>Have a question or want to discuss your project? Fill out the form below, and we’ll get back to you as soon as possible.</p>
-            </div>
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-
-    </div>
-
-</section>
 
 <!-- Footer -->
 <footer class="iris-bg">
