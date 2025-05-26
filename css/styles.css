@@ -227,14 +227,17 @@ input[type="text"]:required~label::after, input[type="email"]:required, textarea
     font-size: 1rem;
   /* font-weight: 900; */
     /* margin: 10px;
-    color:#D15BAD */
-} */
+    color:#D15BAD } */
+
+
+ 
 /* Responsive */
 @media (min-width: 576px) {
     #home .logo { 
         width: 150px;
         }
 }
+
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
@@ -252,7 +255,8 @@ input[type="text"]:required~label::after, input[type="email"]:required, textarea
         background-size: auto 300px;
         min-height: 300px;
     }
-}
+
+   
 @media (min-width: 992px) { 
     #home h1 { 
         margin-top: 0;
