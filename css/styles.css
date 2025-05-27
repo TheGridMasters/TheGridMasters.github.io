@@ -135,13 +135,14 @@ footer {
 }
 /* Base Styles */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -169,7 +170,7 @@ nav a {
 }
 
 nav .button {
-  background-color: #799282;
+  background-color: #b30f97;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -186,12 +187,12 @@ nav .button {
 /* History Section */
 .history {
   padding: 2rem;
-  font-family: 'Irish Grover', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .history h2,
 .history p {
-  font-family: 'Irish Grover', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -212,12 +213,12 @@ nav .button {
 .testimonials {
   padding: 2rem;
   background-color: #d3ecf0;
-  font-family: 'Ribeye', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .testimonials h2 {
   text-align: center;
-  font-family: 'Ribeye', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 .testimonial-box {
@@ -248,6 +249,7 @@ footer {
 
 .footer-contact p {
   margin: 0.3rem 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .social {
@@ -332,35 +334,282 @@ img {
     margin-bottom: 1rem;
   }
 }
+
 /* History Section */
 .history {
   padding: 2rem;
-  font-family: 'Irish Grover', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 24px; /* Add this here if applying to the whole section */
+  font-size: 24px;
 }
+
 .testimonials {
-  font-family: 'Ribeye', cursive;
-  font-size: 18px; /* Adjust this size as needed */
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   text-align: center;
 }
+
 .footer-contact {
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
 nav a:hover {
   color: #799282;
   text-decoration: underline;
 }
+
 .social a:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
 input:focus,
 textarea:focus {
   border: 2px solid #799282;
   outline: none;
 }
+
+.testimonials h2 + p {
+  font-style: italic;
+  color: #444;
+}/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav .button {
+  background-color: #799282;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background-color: #799282;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.history h2,
+.history p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.history-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.history-images img {
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #d3ecf0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.testimonial-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.testimonial-box img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e3253;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer-contact p {
+  margin: 0.3rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.social a img {
+  width: 24px;
+  height: auto;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet view - screens up to 1024px */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-box img {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile view - screens up to 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-banner {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .history,
+  .testimonials {
+    padding: 1rem;
+  }
+
+  .history-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-box img {
+    margin-bottom: 1rem;
+  }
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.testimonials {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-contact {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  color: #799282;
+  text-decoration: underline;
+}
+
+.social a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #799282;
+  outline: none;
+}
+
 .testimonials h2 + p {
   font-style: italic;
   color: #444;
