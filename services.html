@@ -63,10 +63,10 @@
     <section class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-                <h2 style="padding: 15px 0 10px 0">Digitizing</h2>
-                <p>Digitizing is the first step in bringing your design to life through embroidery. We convert your image or logo into a digital embroidery file using expert software that maps each stitch precisely. Whether it’s a simple monogram or a complex logo, our team ensures it’s clean, balanced, and ready for stitching.</p>
+                <h2 style="padding: 15px 0 10px 0" id="digitizing">Digitizing</h2>
+                <p class="text-md-start animation-base delay-1">Digitizing is the first step in bringing your design to life through embroidery. We convert your image or logo into a digital embroidery file using expert software that maps each stitch precisely. Whether it’s a simple monogram or a complex logo, our team ensures it’s clean, balanced, and ready for stitching.</p>
                 <div class="text-end">
-                    <div class="d-grid gap-2 d-md-block" style="padding-right: 30px;"><button type="button" class="btn btn-primary">View Our Designs</button></div><br>
+                    <div class="d-grid gap-2 d-md-block pe-md-5 pe-0"><button type="button" class="btn btn-primary">View Our Designs</button></div><br>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 text-center">
@@ -80,10 +80,10 @@
     <section class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-2 text-center text-md-start">
-                <h2 style="padding: 15px 0 10px 0">Custom Embroidery</h2>
-                <p>Our custom embroidery service transforms clothing and accessories into one-of-a-kind pieces. You can bring your own design or work with us to create something new. We offer embroidery for apparel like jackets, caps, polos, and more—perfect for businesses, teams, events, or personal use.</p>
+                <h2 style="padding: 15px 0 10px 0" id="customEmbroidery">Custom Embroidery</h2>
+                <p class="text-md-start animation-base delay-2">Our custom embroidery service transforms clothing and accessories into one-of-a-kind pieces. You can bring your own design or work with us to create something new. We offer embroidery for apparel like jackets, caps, polos, and more—perfect for businesses, teams, events, or personal use.</p>
                 <div class="text-end">
-                    <div class="d-grid gap-2 d-md-block" style="padding-right: 20px;"><button type="button" class="btn btn-primary">Explore Our Embroidery</button></div><br>
+                    <div class="d-grid gap-2 d-md-block pe-md-4 pe-0"><button type="button" class="btn btn-primary">Explore Our Embroidery</button></div><br>
                 </div>
             </div>
             <div class="col-md-6 text-center order-1 order-md-1">
@@ -98,10 +98,10 @@
     <section class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-                <h2 style="padding: 15px 0 10px 0;">Varsity Jackets/ Patches</h2>
-                <p>We specialize in creating custom varsity jackets and patches that stand out. Whether it's for schools, sports teams, or personal collections, we design and embroider high-quality patches that represent your milestones and identity. Jackets can be customized with names, logos, and unique designs for a timeless look.</p>
+                <h2 style="padding: 15px 0 10px 0;" id="varsityJacketPatches">Varsity Jackets/ Patches</h2>
+                <p class="text-md-start animation-base delay-3">We specialize in creating custom varsity jackets and patches that stand out. Whether it's for schools, sports teams, or personal collections, we design and embroider high-quality patches that represent your milestones and identity. Jackets can be customized with names, logos, and unique designs for a timeless look.</p>
                 <div class="text-end">
-                    <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">See Our Creations</button></div><br>
+                    <div class="d-grid gap-2 d-md-block pe-md-4 pe-0"><button type="button" class="btn btn-primary">See Our Creations</button></div><br>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 text-center">
@@ -135,42 +135,42 @@
             </div>
             <div class="col-12">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" >
+                <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
             </div>
             <div class="col-md-6">
                 <p>What services are you interested in?</p>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="radio" name="servicesbutton" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Digitizing
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="radio" name="servicesbutton" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Custom Embroidery
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="radio" name="servicesbutton" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Varsity Jackets/ Patches
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="radio" name="servicesbutton" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Other/ Not sure
                     </label>
                 </div>
             </div>
             <div class="col-md-6">
-                <label for="floatingTextarea">If you have any other question, please ask below...</label>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px" aria-label="comment area"></textarea>
+                <label for="floatingTextarea" required>Describe Your Vision - We'll Bring It to Life!</label>
+                <textarea class="form-control" placeholder="Please Share the Details of Your Order" id="floatingTextarea" style="height: 200px" aria-label="comment area" required></textarea>
             </div>
 
             <div class="col-12 text-center">
-                <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-secondary" style="margin-top: 20px">Submit the form</button></div>
+                <div class="d-grid gap-2 d-md-block"><button type="submit" class="btn btn-secondary" style="margin-top: 20px">Submit the form</button></div>
             </div>
         </form>
 
