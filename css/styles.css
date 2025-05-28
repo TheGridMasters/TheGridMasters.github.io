@@ -255,7 +255,7 @@ input[type="text"]:required~label::after, input[type="email"]:required, textarea
         background-size: auto 300px;
         min-height: 300px;
     }
-
+}
    
 @media (min-width: 992px) { 
     #home h1 { 
