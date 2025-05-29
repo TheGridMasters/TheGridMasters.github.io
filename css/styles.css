@@ -221,20 +221,23 @@ input[type="text"]:required~label::after, input[type="email"]:required, textarea
     margin: 10px;
     color:#D15BAD
 }
+/*
 #contactus p:nth-child(2)::before, .asterisk{
     content: "\2a";
     font-family: "FontAwesome";
     font-size: 1rem;
-font-weight: 900;
-margin: 10px;
+    font-weight: 900;
+    margin: 10px;
     color:#D15BAD
 } */
+
 /* Responsive */
 @media (min-width: 576px) {
     #home .logo { 
         width: 150px;
         }
 }
+
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
@@ -253,6 +256,7 @@ margin: 10px;
         min-height: 300px;
     }
 }
+   
 @media (min-width: 992px) { 
     #home h1 { 
         margin-top: 0;
