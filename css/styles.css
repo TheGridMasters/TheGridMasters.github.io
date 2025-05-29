@@ -415,7 +415,6 @@ nav .button {
   padding: 0.5rem 1rem;
   border-radius: 4px;
 }
-
 /* Hero Banner */
 .hero-banner {
   background-color: #799282;
@@ -423,6 +422,17 @@ nav .button {
   text-align: center;
   padding: 2rem 0;
 }
+
+.hero-banner h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+  color: white;
+}
+
 
 /* History Section */
 .history {
@@ -498,9 +508,23 @@ footer {
   gap: 10px;
   margin-top: 1rem;
 }
+.logo-white {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-logo-text {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+
 
 .social a img {
-  width: 24px;
+  width: 58px;
   height: auto;
 }
 
@@ -588,10 +612,58 @@ img {
   font-size: 18px;
   text-align: center;
 }
+/* === Footer Styling === */
+footer {
+  background-color: #4B4C82;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
 
+.footer-logo-text {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  
+}
+
+footer a:hover {
+  color: #BFE8EC;
+}
+
+.social a i {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social a i:hover {
+  color: #BFE8EC;
+}
+
+.logo-white {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
+}
 .footer-contact {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 nav a:hover {
@@ -599,9 +671,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
+
 .social a:hover img {
-  transform: scale(1.1);
+  transform:scale(1.1);
   transition: transform 0.3s ease;
+}
+.social a i {
+  font-size: 1.5rem;  /* You can increase this (e.g., 2.5rem or 3rem) */
+  color: white;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a i:hover {
+  color: #BFE8EC;
+  transform: scale(1.2);
 }
 
 input:focus,
@@ -613,4 +697,10 @@ textarea:focus {
 .testimonials h2 + p {
   font-style: italic;
   color: #444;
+}
+.footer-brand-text {
+  color: white;
+  text-align: left;
+  font-weight:normal;
+  margin-top: 2%;
 }
