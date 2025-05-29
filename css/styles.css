@@ -319,33 +319,13 @@ iframe {
   height: 100%;
   min-height: 300px;
 }
-<<<<<<< Updated upstream
-input[type="text"]:required, input[type="email"]:required, textarea:required {
-    border-color: red;
-}
-input[type="text"]:required~label::after, input[type="email"]:required, textarea:required {
-    content: "\2a";
-    font-family: "FontAwesome";
-    font-size: 1rem;
-    margin: 10px;
-    color:#D15BAD
-}
-/* #contactus p:nth-child(2)::before, .asterisk{
-    content: "\2a";
-    font-family: "FontAwesome";
-    font-size: 1rem;
-  /* font-weight: 900; */
-    /* margin: 10px;
-    color:#D15BAD */
-} */
-=======
->>>>>>> Stashed changes
 /* Responsive */
 @media (min-width: 576px) {
     #home .logo { 
         width: 150px;
         }
 }
+
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
@@ -364,6 +344,7 @@ input[type="text"]:required~label::after, input[type="email"]:required, textarea
         min-height: 300px;
     }
 }
+   
 @media (min-width: 992px) { 
     #home h1 { 
         margin-top: 0;
