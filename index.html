@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-lg-7 col-xl-8">
                 <h1 class="text-lg-start">Seams Creative</h1>
-                <p class="text-small text-center text-md-start animation-base">
+                <p class="text-center text-md-start animation-base">
                     At Seams Creative, we turn your ideas into beautifully stitched reality. Based in San Diego, we specialize in custom sewing, contract production, machine embroidery, and embroidery digitizing. Whether you're an individual with a vision or a business looking for production support, we bring craftsmanship, creativity, and care to every stitch.
                 </p>
                 <div class="d-grid gap-2 d-md-block"><a href="about-us.html" class="btn btn-primary">Behind the Seams</a></div>
@@ -129,10 +129,10 @@
 <section class="py-4">
     <div class="container py-5">
         <h3 class="text-center needle-icon">Subscribe to Our Newsletter</h3>
-        <form action="#" method="POST" class="row">
-                <div class="offset-md-3 col-md-5">
+        <form action="submit-form.php" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
+                <div class="offset-md-3 col-md-5 mask">
                      <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
-                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Email Address" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address">
                 </div>
                 <div class="col-md-2 d-grid gap-2 d-md-block mt-3 mt-md-0"><button type="submit" class="btn btn-primary">Subscribe</button></div>
         </form>

@@ -61,17 +61,9 @@
 <main>
     <div class="container pb-5">
         <p class="py-3">We&apos;d love to hear from you! Whether you have a question, a custom project in mind, or would like a quote, please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
-        <!-- Alert Messages -->
-        <!-- <div id="formAlertSuccess" class="alert alert-success d-none" role="alert">
-            🎉 Thank you! Your message has been sent successfully.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <div id="formAlertError" class="alert alert-danger d-none" role="alert">
-            ⚠️ Oops! Something went wrong. Please try again later.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div> -->
-        <form class="row g-3" action="#" method="POST"> <!-- TODO: Replace with actual backend handler -->
-            <div class="col-md-6 mask">
+        <form class="row g-3" action="#" method="POST"> 
+            <!-- TODO: Replace with actual backend handler -->
+            <div class="col-md-6 pe-md-3 mask">
                 <label for="firstName" class="form-label req">First Name</label>
                 <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name" required>
             </div>
@@ -79,7 +71,7 @@
                 <label for="lastName" class="form-label req">Last Name</label>
                 <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name" required>
             </div>
-            <div class="col-md-6 mask">
+            <div class="col-md-6 pe-md-3 mask">
                 <label for="enterEmail" class="form-label req">Email Address</label>
                 <input type="email" name="enterEmail" class="form-control" id="enterEmail" placeholder="name@example.com" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
             </div>
@@ -92,7 +84,7 @@
                 <input type="text" class="form-control" id="organization" name="organization" placeholder="Company or organization name">
             </div>
             <!-- Type of Inquiry (radio buttons) -->
-            <fieldset class="col-md-6 radio-button">
+            <fieldset class="col-md-6 radio-button px-0">
                 <legend class="text-large ps-0 req">Type of Inquiry</legend>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="inquiryType" id="generalQuestion" value="general" required>
@@ -120,9 +112,9 @@
                 </div>
             </fieldset>
             <!-- Service Type (drop down menu) -->
-            <fieldset class="col-md-6">
+            <fieldset class="col-md-6 px-0">
                 <legend class="form-label text-large req">Which service are you interested in?</legend>
-                <select id="serviceType" name="serviceType" class="form-select" aria-label="Default select example" required>
+                <select id="serviceType" name="serviceType" class="form-select px-3" required>
                     <option value="" disabled selected>-- Click or tap to select a service --</option>
                     <option value="custom_embroidery">Custom Embroidery</option>
                     <option value="digitizing">Digitizing</option>
@@ -137,7 +129,7 @@
                 <textarea class="form-control" id="tellUs" name="tellUs" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
             </div>
             <!-- Timeline (list box) -->
-            <fieldset class="mb-3">
+            <fieldset class="mb-3 px-0">
                 <legend class="text-large ps-0 opt">Preferred Delivery Timeline</legend>
                 <ul class="list-group list-box">
                     <li class="list-group-item list-group-item-action p-0">
@@ -167,27 +159,27 @@
                 </ul>
             </fieldset>
             <!-- Referral source (checkboxes) -->
-            <fieldset>
-                <legend class="text-large ps-0 opt">How did you hear about us? (Select all that apply)</legend>
+             <fieldset class="col-md-6 px-0">
+                <legend class="text-large opt">How did you hear about us? (Select all that apply)</legend>
                 <div class="d-flex flex-wrap mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource" value="google" id="google">
+                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="google" id="google">
                         <label class="form-check-label" for="google">Google</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource" value="instagram" id="instagram">
+                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="instagram" id="instagram">
                         <label class="form-check-label" for="instagram">Instagram</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource" value="referral" id="referral">
+                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="referral" id="referral">
                         <label class="form-check-label" for="referral">Referral</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource" value="returningCustomer" id="returningCustomer">
+                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="returningCustomer" id="returningCustomer">
                         <label class="form-check-label" for="returningCustomer">Returning&nbsp;Customer</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource" value="Other" id="otherReason">
+                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="Other" id="otherReason">
                         <label class="form-check-label" for="otherReason">Other</label>
                     </div>
                 </div>
@@ -217,10 +209,10 @@
 <section class="py-4">
     <div class="container py-5">
         <h3 class="text-center needle-icon">Subscribe to Our Newsletter</h3>
-        <form action="#" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
+        <form action="submit-form.php" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
                 <div class="offset-md-3 col-md-5 mask">
                      <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
-                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Email Address" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address">
                 </div>
                 <div class="col-md-2 d-grid gap-2 d-md-block mt-3 mt-md-0"><button type="submit" class="btn btn-primary">Subscribe</button></div>
         </form>
