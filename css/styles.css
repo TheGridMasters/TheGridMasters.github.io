@@ -20,11 +20,9 @@ h3 {
     font-size: 1.3rem;
 }
 .text-small {
-    font-family: "Roboto", sans-serif;
     font-size: 0.9rem;
 }
 .text-large {
-    font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
 }
 a {
@@ -37,10 +35,10 @@ a:hover {
     transform: scale(1.1);
 }
 .logo-link {
-    transition-duration:unset;
+    transition: none;
 }
 .logo-link:hover {
-    transform:none;
+    transform: none;
 }
 .fa-brands {
     color: #fff;
@@ -53,10 +51,7 @@ a:hover {
     width: 100px;
     margin: 10px;
 }
-.logo {
-    width: 100px;
-}
-.logo-white {
+.logo, .logo-white {
     width: 100px;
 }
 .btn-primary {
@@ -77,7 +72,7 @@ a:hover {
     transition-duration: .4s;
 }
 .btn-primary:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .btn-secondary {
     --bs-btn-color: #fff;
@@ -97,7 +92,7 @@ a:hover {
     transition-duration: .4s;
 }
 .btn-secondary:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .mint-bg {
     background-color: #A8DADC;
@@ -106,18 +101,18 @@ a:hover {
     background-color: #3B4A7A;
 }
 .mail {
-  color: #fff;
-  transition: letter-spacing 0.3s;
+    color: #fff;
+    transition: letter-spacing 0.3s;
 }
 .mail:hover {
-  letter-spacing: 0.05em;
-  color: #A8DADC;
+    letter-spacing: 0.05em;
+    color: #A8DADC;
 }
 .icon {
-  transition-duration: .4s;
+    transition-duration: .4s;
 }
 .icon:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 /* home */
 #home h1 {
@@ -150,7 +145,7 @@ a:hover {
     border-radius: 10pt;
     max-width: 230px;
 }
-#home section h2::before, #home section h3::before {
+.measure-icon::before, .sewing-machine-icon::before, .needle-icon::before, .mailbox-icon::before {
     content: '';
     display: inline-block;
     width: 32px;
@@ -159,85 +154,173 @@ a:hover {
     vertical-align: middle;
     margin-right: 10px;
 }
-#home section:nth-of-type(2) h2::before{
-    background-image: url(../images/mesure-icon.svg);
+.measure-icon::before{
+    background-image: url(../images/measure-icon.svg);
 }
-#home section:nth-of-type(3) h2::before{
+.sewing-machine-icon::before{
     background-image: url(../images/sewing-machine-icon.svg);
 }
-#home section:nth-of-type(4) h3::before{
+.needle-icon::before{
     background-image: url(../images/needle-icon.svg);
 }
 .animation-base {
-      opacity: 0;
-      transform: translateY(30px); 
-      animation: fadeSlideUp 1.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeSlideUp 1.5s ease-out forwards;
 }
 .delay-1 {
-      animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 .delay-2 {
-      animation-delay: 1s;
+    animation-delay: 1s;
 }
 .delay-3 {
-      animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 .delay-4 {
-      animation-delay: 2s;
+    animation-delay: 2s;
 }
 @keyframes fadeSlideUp {
-      to {
+    to {
         opacity: 1;
         transform: translateY(0);
-      }
+    }
 }
 /* Contact Us */
-#contactus .list-group {
-    height: 7em;
+.mailbox-icon::before {
+    background-image: url(../images/mailbox-icon.svg);
+}
+.req::before {
+    content: "Required";
+    font-size: 0.9rem;
+    padding: 2pt 5pt;
+    margin-right: 10px;
+    border-radius: 5pt;
+    border: none; 
+    background-color:#E2725B;
+    color: #fff;
+    vertical-align:middle;
+}
+.opt::before {
+    content: "Optional";
+    font-size: 0.9rem;
+    padding: 2pt 5pt;
+    margin-right: 10px;
+    border-radius: 5pt;
+    border: none; 
+    background-color:#B0B0B0;
+    color: #fff;
+    vertical-align:middle;
+}
+#contactus input, #contactus textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#contactus input[type=radio], #contactus input[type=checkbox] { 
+    display: none;
+}
+#contactus .form-control {
+    border-bottom: 1px solid #ccc;
+    box-shadow: -2000px 5px 0px #ccc;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+#contactus .form-control:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 5px 0px #90B19B;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.mask {
+    overflow:hidden;
+    padding: 0 0 10px 0;
+}
+.radio-button input + label:before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border:1px solid #CCC;
+    border-radius: 100px;
+    box-shadow: 5px 0px 0px #CCC;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.radio-button input:checked + label:before {
+    border-radius: 100px;
+    box-shadow: -5px 0px 0px #90B19B;
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+#contactus input[type=checkbox] + label {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 0px;
+    border:1px solid #ccc;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.list-group {
+    height: 7rem;
     overflow: auto;
 }
-.list-box .form-check-input{
-     display: none;
+.list-group-item {
+    position: relative;
+    padding-left: 2.5rem; 
+    cursor: pointer;
+}
+.list-group-item input[type="checkbox"] {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.list-group-item label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#contactus .form-check, #contactus select {
+    padding-left: 0;
+    padding-right: 0;
 }
 .list-box .form-check-input:checked~label {
     font-weight:500;
-    background-color: rgb(226, 226, 226);
-    width: 100%
+    background-color: #B0B0B0;
+    width: 100%;
+    color:#fff;
 }
-.asterisk::before {
-    content: "\2a";
-    font-family: "FontAwesome";
-    font-size: 0.5rem;
-    margin: 10px;
-    color:#D15BAD
+#contactus input[type=checkbox] + label {
+    cursor: pointer;
 }
-/* input[type="text"]:required, input[type="email"]:required, textarea:required {
-    border-color: red;
+#contactus input[type=checkbox]:checked + label {
+    border-radius: 10px;
+    border:1px solid rgba(144,177,155,0.45);
+    background-color: rgba(144,177,155,0.45);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
 }
-input[type="text"]:required~label::after, input[type="email"]:required, textarea:required {
-    content: "\2a";
-    font-family: "FontAwesome";
-    font-size: 1rem;
-    margin: 10px;
-    color:#D15BAD
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
 }
-/*
-#contactus p:nth-child(2)::before, .asterisk{
-    content: "\2a";
-    font-family: "FontAwesome";
-    font-size: 1rem;
-    font-weight: 900;
-    margin: 10px;
-    color:#D15BAD
-} */
-
 /* Responsive */
 @media (min-width: 576px) {
     #home .logo { 
         width: 150px;
         }
 }
-
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
