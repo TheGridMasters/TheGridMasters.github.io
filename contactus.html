@@ -61,8 +61,7 @@
 <main>
     <div class="container pb-5">
         <p class="py-3">We&apos;d love to hear from you! Whether you have a question, a custom project in mind, or would like a quote, please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
-        <form class="row g-3" action="#" method="POST"> 
-            <!-- TODO: Replace with actual backend handler -->
+        <form class="row g-3" action="#" method="POST">  <!-- TODO: Replace with actual backend handler -->
             <div class="col-md-6 pe-md-3 mask">
                 <label for="firstName" class="form-label req">First Name</label>
                 <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name" required>
@@ -77,7 +76,7 @@
             </div>
             <div class="col-md-6 mask">
                 <label for="phoneNumber" class="form-label opt">Phone Number </label>
-                <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" pattern="^(\d{3}-\d{3}-\d{4}|\(\d{3}\)\s?\d{3}-\d{4})$" placeholder="555-555-5555 or (555)555-5555" title="Hint: Please use the format 555-555-5555 or (555)555-5555">
+                <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" pattern="^(\d{3}-\d{3}-\d{4}|\(\d{3}\)\s?\d{3}-\d{4}|\d{11})$" placeholder="555-555-5555 or (555)555-5555" title="Hint: Please use the format 555-555-5555, (555)555-5555, or 5555555555">
             </div>
             <div class="col-md-12 mask">
                 <label for="organization" class="form-label opt">Company or Organization</label>
@@ -87,25 +86,25 @@
             <fieldset class="col-md-6 radio-button px-0">
                 <legend class="text-large ps-0 req">Type of Inquiry</legend>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="inquiryType" id="generalQuestion" value="general" required>
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="generalQuestion" value="general" required>
                     <label class="form-check-label" for="generalQuestion">
                         General Question
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="inquiryType" id="requestQuote" value="quote">
-                    <label class="form-check-label" for="requestQuote">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="requestQuote" value="quote">
+                    <label class="form-check-label " for="requestQuote">
                         Request a Quote
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="inquiryType" id="collaborationInquiry" value="collaboration">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="collaborationInquiry" value="collaboration">
                     <label class="form-check-label" for="collaborationInquiry">
                         Collaboration Inquiry
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="inquiryType" id="otherQuestion" value="other">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="otherQuestion" value="other">
                     <label class="form-check-label" for="otherQuestion">
                         Other
                     </label>
@@ -125,61 +124,61 @@
             </fieldset>
             <!-- Tell us (multiline textarea) -->
             <div class="mb-3 mask">
-                <label for="tellUs" class="form-label req">Tell us about your project:</label>
-                <textarea class="form-control" id="tellUs" name="tellUs" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
+                <label for="tellUs" class="form-label req">Tell us about your project</label>
+                <textarea class="form-control text-large" id="tellUs" name="tellUs" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
             </div>
             <!-- Timeline (list box) -->
             <fieldset class="mb-3 px-0">
                 <legend class="text-large ps-0 opt">Preferred Delivery Timeline</legend>
                 <ul class="list-group list-box">
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="no-deadline" id="noDeadline">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="no-deadline" id="noDeadline">
                         <label class="form-check-label px-3" for="noDeadline">No specific deadline</label>
                     </li>
-                    <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="one-week" id="oneWeek">
+                    <li class="list-group-item list-group-item-action p-0 ">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="one-week" id="oneWeek">
                         <label class="form-check-label px-3" for="oneWeek">Extremely urgent - Within 1 week</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="two-weeks" id="twoWeek">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="two-weeks" id="twoWeek">
                         <label class="form-check-label px-3" for="twoWeek">Urgent - Within 2 weeks</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="one-month" id="oneMonth">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="one-month" id="oneMonth">
                         <label class="form-check-label px-3" for="oneMonth">Within 1 month</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="three-months" id="threeMonth">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="three-months" id="threeMonth">
                         <label class="form-check-label px-3" for="threeMonth">Within 3 months</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="timeline" value="more-than-3months" id="moreThanThree">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="more-than-3months" id="moreThanThree">
                         <label class="form-check-label px-3" for="moreThanThree">More than 3 months</label>
                     </li>
                 </ul>
             </fieldset>
             <!-- Referral source (checkboxes) -->
-             <fieldset class="col-md-6 px-0">
+             <fieldset class="col-md-12 px-0">
                 <legend class="text-large opt">How did you hear about us? (Select all that apply)</legend>
                 <div class="d-flex flex-wrap mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="google" id="google">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="google" id="google">
                         <label class="form-check-label" for="google">Google</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="instagram" id="instagram">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="instagram" id="instagram">
                         <label class="form-check-label" for="instagram">Instagram</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="referral" id="referral">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="referral" id="referral">
                         <label class="form-check-label" for="referral">Referral</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="returningCustomer" id="returningCustomer">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="returningCustomer" id="returningCustomer">
                         <label class="form-check-label" for="returningCustomer">Returning&nbsp;Customer</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="referralSource[]" value="Other" id="otherReason">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="Other" id="otherReason">
                         <label class="form-check-label" for="otherReason">Other</label>
                     </div>
                 </div>
@@ -194,7 +193,7 @@
 <section class="mint-bg">
     <div class="container py-5">
         <div class="row pb-4 pb-md-0">
-            <iframe class="col-md-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7479539479036!2d-117.12771862372988!3d32.95766327358873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf9cb5dcf5eb1%3A0x54d6ba67fa0b991f!2s13223-1%20Black%20Mountain%20Rd%20%23285%2C%20San%20Diego%2C%20CA%2092129!5e0!3m2!1sja!2sus!4v1748253575240!5m2!1sja!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Seams Creative map"></iframe>
+            <iframe class="col-md-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7479539479036!2d-117.12771862372988!3d32.95766327358873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf9cb5dcf5eb1%3A0x54d6ba67fa0b991f!2s13223-1%20Black%20Mountain%20Rd%20%23285%2C%20San%20Diego%2C%20CA%2092129!5e0!3m2!1sja!2sus!4v1748253575240!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Seams Creative map"></iframe>
             <div class="pt-4 col-md-4 align-self-center text-center text-md-start">
                 <h2 class="mailbox-icon">Mailing Address</h2>
                 <p>
@@ -211,7 +210,7 @@
         <h3 class="text-center needle-icon">Subscribe to Our Newsletter</h3>
         <form action="submit-form.php" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
                 <div class="offset-md-3 col-md-5 mask">
-                     <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
+                    <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
                     <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address">
                 </div>
                 <div class="col-md-2 d-grid gap-2 d-md-block mt-3 mt-md-0"><button type="submit" class="btn btn-primary">Subscribe</button></div>
