@@ -44,8 +44,7 @@ a:hover {
     --bs-bg-opacity: 0;
 }
 #home .logo {
-    width: 100px;
-    margin: 10px;
+    margin-left: 10pt;
 }
 .logo, .logo-white {
     width: 100px;
@@ -115,11 +114,18 @@ a:hover {
     background-color: transparent;
     margin-top: 160pt;
 }
+#home .logo {
+    padding-top: 8px;
+    margin-left: 12px;
+}
+#home .container-fluid {
+    padding-top: 15px;
+}
 #hero {
     background-image: url(../images/seams_creative_hero.jpg);
     background-size: auto 250px;
     background-position: top right;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #FCF9F8;
     background-repeat: no-repeat;
     min-height: 250px;
@@ -298,14 +304,80 @@ iframe {
     height: 100%;
     min-height: 300px;
 }
+/* -------------------- Portfolio -------------------- */
+/* h1 {
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #789181; 
+    text-align: center;
+    padding:5px;
+    margin-bottom: 0;
+} */
+#portfolio h1 {
+    margin-bottom: 0;
+}
+.lbname {
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
+}
+/* .text-center {
+    padding-top: 1em;
+} */
+.lightbox-gallery .text-center {
+    padding-top: 1em;
+}
+div.intro {
+    margin-bottom: 0;
+}
+.lightbox-gallery {
+    background-image: linear-gradient(#A8DADC, #90B19B);
+    
+    background-repeat: no-repeat;color: #000;overflow-x: hidden;
+    /*background-color: #f5f5f0;*/
+}
+
+.lightbox-gallery p {
+    color:#000;
+}
+
+.lightbox-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:#fff;
+}
+
+.note {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 40px 0;   
+}
+.lightbox-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom:0;
+}
+
+.lightbox-gallery .photos {
+    padding-bottom:20px;
+}
+
+.lightbox-gallery .item {
+    padding-bottom:30px;
+}
 /* -------------------- About Us -------------------- */
 /* Hero Banner */
-.hero-banner {
+/* .hero-banner {
   background-color: #799282;
   color: white;
   text-align: center;
   padding: 2rem 0;
-}
+} */
 
 /* History Section */
 .history {
@@ -357,11 +429,24 @@ iframe {
   border-radius: 4px;
 }
 /* -------------------- Responsive -------------------- */
+/* Home */
 @media (min-width: 576px) {
     #home .logo { 
         width: 150px;
-        }
+    }
+    #home .container-fluid {
+        padding-top: 12px;
+    }
 }
+/* Portfolio */
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px
+    }
+}
+/* Home and All */
 @media (min-width: 768px) {
     #home h1 { 
         margin-top: 270px;
@@ -380,7 +465,7 @@ iframe {
         min-height: 300px;
     }
 }
-   
+/* Home */
 @media (min-width: 992px) { 
     #home h1 { 
         margin-top: 0;
