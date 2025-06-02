@@ -298,6 +298,64 @@ iframe {
     height: 100%;
     min-height: 300px;
 }
+/* -------------------- About Us -------------------- */
+/* Hero Banner */
+.hero-banner {
+  background-color: #799282;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.history h2,
+.history p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.history-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.history-images img {
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #d3ecf0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.testimonial-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.testimonial-box img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
 /* -------------------- Responsive -------------------- */
 @media (min-width: 576px) {
     #home .logo { 
