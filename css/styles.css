@@ -191,119 +191,6 @@ a:hover {
         transform: translateY(0);
     }
 }
-/* -------------------- Contact Us -------------------- */
-.mailbox-icon::before {
-    background-image: url(../images/mailbox-icon.svg);
-}
-/* Required and Optional icon */
-.req::before, .opt::before {
-    font-size: 0.9rem;
-    padding: 2pt 5pt;
-    margin-right: 10px;
-    border-radius: 5pt;
-    border: none; 
-    color: #fff;
-    vertical-align:middle;
-}
-.req::before {
-    content: "Required";
-    background-color:#E2725B;
-}
-.opt::before {
-    content: "Optional";
-    background-color:#B0B0B0;
-}
-/* Underline slidin animation */
-#contactus input, #contactus textarea, #contactus select, #home input {
-    border-radius: 0px;
-}
-#contactus .form-control, #home .form-control {
-    border-bottom: 1px solid #B0B0B0;
-    box-shadow: -2000px 5px 0px #B0B0B0;
-    transition: all 500ms;
-}
-#contactus .form-control:focus, #home .form-control:focus {
-    border-bottom: 1px solid #fff;
-    box-shadow: 0px 5px 0px #90B19B;
-    transition: all 500ms;
-}
-.mask {
-    overflow:hidden;
-    padding: 0 0 10px 0;
-}
-/* Type of Inquiry (Radio button animation) */
-.radio-button input + label:before {
-    display: inline-block;
-    content: "";
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    border:1px solid #B0B0B0;
-    border-radius: 100px;
-    box-shadow: 5px 0px 0px #B0B0B0;
-    transition: all 500ms;
-}
-.radio-button input:checked + label:before {
-    border-radius: 100px;
-    box-shadow: -5px 0px 0px #90B19B;
-    transform: translateX(10px);
-    transition: all 500ms;
-}
-/* Which service are you interested in? (Dropdown box setting) */
-#contactus select {
-    cursor: pointer;
-}
-#contactus .form-check {
-    padding-left: 0;
-    padding-right: 0;
-}
-#contactus .form-select {
-    border-bottom: 1px solid #B0B0B0;
-    box-shadow: 0 0 0 #B0B0B0;
-}
-/* Preferred Delivery Timeline (List box setting) */
-.list-group {
-    height: 7rem;
-    overflow: auto;
-}
-.list-group-item label {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.list-box .form-check-input:checked~label {
-    font-weight:500;
-    background-color :rgba(144,177,155,0.45);
-    width: 100%;
-}
-/* How did you hear about us? (Check box setting) */
-#contactus input[type=checkbox] + label {
-    font-size: 0.8rem;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 0px;
-    border:1px solid #B0B0B0;
-    transition: all 500ms;
-    cursor: pointer;
-}
-#contactus input[type=checkbox]:hover + label {
-    background-color: #ececec;
-    text-shadow: 0.1px 0.1px 0 rgba(0, 0, 0, 1);
-}
-#contactus input[type=checkbox]:checked + label {
-    font-weight:500;
-    border-radius: 10px;
-    border:1px solid rgba(144,177,155,0.45);
-    background-color: rgba(144,177,155,0.45);
-    transition: all 500ms;
-}
-/* map */
-iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 300px;
-}
 /* -------------------- Portfolio -------------------- */
 /* h1 {
     font-family: "Merriweather", serif;
@@ -427,6 +314,119 @@ div.intro {
   width: 80px;
   height: auto;
   border-radius: 4px;
+}
+/* -------------------- Contact Us -------------------- */
+.mailbox-icon::before {
+    background-image: url(../images/mailbox-icon.svg);
+}
+/* Required and Optional icon */
+.req::before, .opt::before {
+    font-size: 0.9rem;
+    padding: 2pt 5pt;
+    margin-right: 10px;
+    border-radius: 5pt;
+    border: none; 
+    color: #fff;
+    vertical-align:middle;
+}
+.req::before {
+    content: "Required";
+    background-color:#E2725B;
+}
+.opt::before {
+    content: "Optional";
+    background-color:#B0B0B0;
+}
+/* Underline slidin animation */
+#contactus input, #contactus textarea, #contactus select, #home input {
+    border-radius: 0px;
+}
+#contactus .form-control, #home .form-control {
+    border-bottom: 1px solid #B0B0B0;
+    box-shadow: -2000px 5px 0px #B0B0B0;
+    transition: all 500ms;
+}
+#contactus .form-control:focus, #home .form-control:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 5px 0px #90B19B;
+    transition: all 500ms;
+}
+.mask {
+    overflow:hidden;
+    padding: 0 0 10px 0;
+}
+/* Type of Inquiry (Radio button animation) */
+.radio-button input + label:before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border:1px solid #B0B0B0;
+    border-radius: 100px;
+    box-shadow: 5px 0px 0px #B0B0B0;
+    transition: all 500ms;
+}
+.radio-button input:checked + label:before {
+    border-radius: 100px;
+    box-shadow: -5px 0px 0px #90B19B;
+    transform: translateX(10px);
+    transition: all 500ms;
+}
+/* Which service are you interested in? (Dropdown box setting) */
+#contactus select {
+    cursor: pointer;
+}
+#contactus .form-check {
+    padding-left: 0;
+    padding-right: 0;
+}
+#contactus .form-select {
+    border-bottom: 1px solid #B0B0B0;
+    box-shadow: 0 0 0 #B0B0B0;
+}
+/* Preferred Delivery Timeline (List box setting) */
+.list-group {
+    height: 7rem;
+    overflow: auto;
+}
+.list-group-item label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.list-box .form-check-input:checked~label {
+    font-weight:500;
+    background-color :rgba(144,177,155,0.45);
+    width: 100%;
+}
+/* How did you hear about us? (Check box setting) */
+#contactus input[type=checkbox] + label {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 0px;
+    border:1px solid #B0B0B0;
+    transition: all 500ms;
+    cursor: pointer;
+}
+#contactus input[type=checkbox]:hover + label {
+    background-color: #ececec;
+    text-shadow: 0.1px 0.1px 0 rgba(0, 0, 0, 1);
+}
+#contactus input[type=checkbox]:checked + label {
+    font-weight:500;
+    border-radius: 10px;
+    border:1px solid rgba(144,177,155,0.45);
+    background-color: rgba(144,177,155,0.45);
+    transition: all 500ms;
+}
+/* map */
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
 }
 /* -------------------- Responsive -------------------- */
 /* Home */
