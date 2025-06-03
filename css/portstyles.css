@@ -32,7 +32,10 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-size: .8em;
 }
-.text-center {
+/* .text-center {
+    padding-top: 1em;
+} */
+.lightbox-gallery .text-center {
     padding-top: 1em;
 }
 div.intro {

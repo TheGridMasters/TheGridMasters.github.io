@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover expert digitizing, custom embroidery, and varsity jacket patch services at Seams Creative. Crafted with precision in San Diego, CA.">
     <title>Services</title>
     <!-- Bootstrap CSS -->
     <link
@@ -11,7 +12,6 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,9 +52,7 @@
               ><img
                 src="images/seams-creative-logo.svg"
                 class="seams creative thread logo"
-                alt="logo"
-                height="100"
-                width="100"
+                alt="Seams Creative Logo"
             /></a>
             <button
               class="navbar-toggler"
@@ -84,14 +82,14 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
                 <li class="nav-item">
                   <div class="d-grid gap-2 d-md-block">
-                    <a href="contactus.html" class="btn btn-primary ms-2"
+                    <a href="contactus.html" class="btn btn-primary ms-2" role="button"
                       >Drop Us a Line</a
                     >
                   </div>
@@ -109,7 +107,7 @@
     <section class="container py-5">
       <div class="row align-items-center">
         <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-          <h2 style="padding: 15px 0 10px 0" id="digitizing">Digitizing</h2>
+          <h2 class="services-section" id="digitizing">Digitizing</h2>
           <p class="text-md-start animation-base delay-1">
             Digitizing is the first step in bringing your design to life through
             embroidery. We convert your image or logo into a digital embroidery
@@ -138,12 +136,12 @@
       </div>
     </section>
 
-    <hr class="d-block d-md-none" style="height: 2px; background-color: #000" />
+    <hr class="d-block d-md-none mobile-hr" />
 
     <section class="container py-5">
       <div class="row align-items-center">
         <div class="col-md-6 order-2 order-md-2 text-center text-md-start">
-          <h2 style="padding: 15px 0 10px 0" id="customEmbroidery">
+          <h2 class="services-section" id="customEmbroidery">
             Custom Embroidery
           </h2>
           <p class="text-md-start animation-base delay-2">
@@ -174,12 +172,12 @@
       </div>
     </section>
 
-    <hr class="d-block d-md-none" style="height: 2px; background-color: #000" />
+    <hr class="d-block d-md-none mobile-hr" />
 
     <section class="container py-5">
       <div class="row align-items-center">
         <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-          <h2 style="padding: 15px 0 10px 0" id="varsityJacketPatches">
+          <h2 class="services-section" id="varsityJacketPatches">
             Varsity Jackets/ Patches
           </h2>
           <p class="text-md-start animation-base delay-3">
@@ -214,7 +212,7 @@
     <section class="mint-bg py-5">
       <div class="container">
         <div>
-          <h2 class="text-center" style="padding-bottom: 20px">
+          <h2 class="text-center request-quote">
             Request a Quote
           </h2>
         </div>
@@ -328,10 +326,9 @@
               >Describe Your Vision - We'll Bring It to Life!</label
             >
             <textarea
-              class="form-control"
+              class="form-control textarea"
               placeholder="Please Share the Details of Your Order"
               id="floatingTextarea"
-              style="height: 200px"
               aria-label="comment area"
               required
             ></textarea>
@@ -341,8 +338,7 @@
             <div class="d-grid gap-2 d-md-block">
               <button
                 type="submit"
-                class="btn btn-secondary"
-                style="margin-top: 20px"
+                class="btn btn-secondary submit-button"
               >
                 Submit the form
               </button>
@@ -363,7 +359,7 @@
               ><img
                 src="images/seams-creative-logo-white.svg"
                 class="logo-white"
-                alt="logo-white"
+                alt="Seams Creative Logo"
                 height="100"
                 width="100"
             /></a>
