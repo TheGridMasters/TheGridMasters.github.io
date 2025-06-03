@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body id="home">
+<body class="home">
 <!-- Navbar -->
 <header class>
     <div class="container pt-1">
@@ -132,7 +132,7 @@
         <form action="submit-form.php" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
                 <div class="offset-md-3 col-md-5 mask">
                     <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
-                    <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address">
+                    <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
                 </div>
                 <div class="col-md-2 d-grid gap-2 d-md-block mt-3 mt-md-0"><button type="submit" class="btn btn-primary">Subscribe</button></div>
         </form>

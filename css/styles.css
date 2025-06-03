@@ -43,7 +43,7 @@ a:hover {
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
 }
-#home .logo {
+.home .logo {
     margin-left: 10pt;
 }
 .logo, .logo-white {
@@ -109,16 +109,16 @@ a:hover {
     padding:5px;
 }
 /* -------------------- home -------------------- */
-#home h1 {
+.home h1 {
     color: black;
     background-color: transparent;
     margin-top: 160pt;
 }
-#home .logo {
+.home .logo {
     padding-top: 8px;
     margin-left: 12px;
 }
-#home .container-fluid {
+.home .container-fluid {
     padding-top: 15px;
 }
 #hero {
@@ -131,20 +131,20 @@ a:hover {
     min-height: 250px;
 }
 /* Our Craft (Card setting) */
-#home .card {
+.home .card {
     --bs-card-bg: none;
     --bs-card-border-width: 0;
     --bs-card-spacer-y: 0rem;
     --bs-card-spacer-x: 0rem;
     --bs-card-title-spacer-y: 1rem;
 }
-#home .card-img, #home .card-img-top {
+.home .card-img, .home .card-img-top {
     border-radius: 10pt;
     max-width: 426px;
     margin: auto;
 }
 /* Video */
-#home video {
+.home video {
     border-radius: 10pt;
     max-width: 230px;
 }
@@ -191,6 +191,28 @@ a:hover {
         transform: translateY(0);
     }
 }
+/* -------------------- Services -------------------- */
+
+.services-section {
+    padding: 15px 0 10px 0;
+}
+
+.request-quote {
+    padding-bottom: 20px;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.mobile-hr{
+    height: 2px; 
+    background-color: #000;
+}
 /* -------------------- Portfolio -------------------- */
 /* h1 {
     font-family: "Merriweather", serif;
@@ -201,7 +223,7 @@ a:hover {
     padding:5px;
     margin-bottom: 0;
 } */
-#portfolio h1 {
+.portfolio h1 {
     margin-bottom: 0;
 }
 .lbname {
@@ -338,15 +360,15 @@ div.intro {
     background-color:#B0B0B0;
 }
 /* Underline slidin animation */
-#contactus input, #contactus textarea, #contactus select, #home input {
+.contactus input, .contactus textarea, .contactus select, .home input {
     border-radius: 0px;
 }
-#contactus .form-control, #home .form-control {
+.contactus .form-control, .home .form-control {
     border-bottom: 1px solid #B0B0B0;
     box-shadow: -2000px 5px 0px #B0B0B0;
     transition: all 500ms;
 }
-#contactus .form-control:focus, #home .form-control:focus {
+.contactus .form-control:focus, .home .form-control:focus {
     border-bottom: 1px solid #fff;
     box-shadow: 0px 5px 0px #90B19B;
     transition: all 500ms;
@@ -374,14 +396,14 @@ div.intro {
     transition: all 500ms;
 }
 /* Which service are you interested in? (Dropdown box setting) */
-#contactus select {
+.contactus select {
     cursor: pointer;
 }
-#contactus .form-check {
+.contactus .form-check {
     padding-left: 0;
     padding-right: 0;
 }
-#contactus .form-select {
+.contactus .form-select {
     border-bottom: 1px solid #B0B0B0;
     box-shadow: 0 0 0 #B0B0B0;
 }
@@ -402,7 +424,7 @@ div.intro {
     width: 100%;
 }
 /* How did you hear about us? (Check box setting) */
-#contactus input[type=checkbox] + label {
+.contactus input[type=checkbox] + label {
     font-size: 0.8rem;
     margin-right: 10px;
     padding: 5px;
@@ -411,11 +433,11 @@ div.intro {
     transition: all 500ms;
     cursor: pointer;
 }
-#contactus input[type=checkbox]:hover + label {
+.contactus input[type=checkbox]:hover + label {
     background-color: #ececec;
     text-shadow: 0.1px 0.1px 0 rgba(0, 0, 0, 1);
 }
-#contactus input[type=checkbox]:checked + label {
+.contactus input[type=checkbox]:checked + label {
     font-weight:500;
     border-radius: 10px;
     border:1px solid rgba(144,177,155,0.45);
@@ -429,16 +451,16 @@ iframe {
     min-height: 300px;
 }
 /* -------------------- Responsive -------------------- */
-/* Home */
+/* width small or more (Home) */
 @media (min-width: 576px) {
-    #home .logo { 
+    .home .logo { 
         width: 150px;
     }
-    #home .container-fluid {
+    .home .container-fluid {
         padding-top: 12px;
     }
 }
-/* Portfolio */
+/* width less than midium (Portfolio) */
 @media (max-width:767px) {
     .lightbox-gallery h2 {
         margin-bottom:25px;
@@ -446,9 +468,9 @@ iframe {
         font-size:24px
     }
 }
-/* Home and All */
+/* width midium or more (Home and All) */
 @media (min-width: 768px) {
-    #home h1 { 
+    .home h1 { 
         margin-top: 270px;
         }
     h1 {
@@ -460,17 +482,17 @@ iframe {
     h3 {
         font-size: 1.3rem;
     }
-    #hero {
+    .hero {
         background-size: auto 300px;
         min-height: 300px;
     }
 }
-/* Home */
+/* width large or more (Home) */
 @media (min-width: 992px) { 
-    #home h1 { 
+    .home h1 { 
         margin-top: 0;
         } 
-    #hero {
+    .hero {
         background-size: auto 350px;
         min-height: 350px;
     }
