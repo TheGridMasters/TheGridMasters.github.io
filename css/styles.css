@@ -215,15 +215,6 @@ a:hover {
     background-color: #000;
 }
 /* -------------------- Portfolio -------------------- */
-/* h1 {
-    font-family: "Merriweather", serif;
-    font-size: 1.8rem;
-    color: white;
-    background-color: #789181; 
-    text-align: center;
-    padding:5px;
-    margin-bottom: 0;
-} */
 .portfolio h1 {
     margin-bottom: 0;
 }
@@ -231,9 +222,6 @@ a:hover {
     font-family: "Roboto", sans-serif;
     font-size: .8em;
 }
-/* .text-center {
-    padding-top: 1em;
-} */
 .lightbox-gallery .text-center {
     padding-top: 1em;
 }
@@ -281,14 +269,6 @@ div.intro {
     padding-bottom:30px;
 }
 /* -------------------- About Us -------------------- */
-/* Hero Banner */
-/* .hero-banner {
-  background-color: #799282;
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-} */
-
 /* History Section */
 .history {
   padding: 2rem;
