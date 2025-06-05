@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Seams Creative for custom embroidery, sewing services, and more. Get a quote today.">
     <title>Contact Us - Seams Creative</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +22,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body id="contactus">
+<body class="contactus">
 <!-- Navbar -->
 <header>
     <div class="container py-1">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <a class="logo-link" href="index.html"><img src="images/seams-creative-logo.svg" class="logo"></a>
+                <a class="logo-link" href="index.html"><img src="images/seams-creative-logo.svg" class="logo" alt="Seams Creative Logo"
+></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,13 +42,13 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
-                        <li class="nav-item active">
-                            <div class="d-grid gap-2 d-md-block"><a href="contactus.html" aria-current="page" class="btn btn-primary ms-2">Drop Us a Line</a></div>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block"><a href="contactus.html" class="btn btn-primary ms-2" role="button">Drop Us a Line</a></div>
                         </li>
                     </ul>
                 </div>
@@ -56,172 +57,164 @@
     </div>
     <h1>Contact & Quote Form</h1>
 </header>
-<!-- Main -->
-<section>
-    <div class="container py-5">
-        <p>We&apos;d love to hear from you! Whether you have a question, a custom project in mind, or would like a quote, please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
-        <p class="asterisk">means it&apos;s a required field — thanks for taking the time!</p>
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="exampleFormControlInput1" class="form-label">First Name:</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" required>
+<!-- Main form area (text boxes) -->
+<main>
+    <div class="container pb-5">
+        <p class="py-3">We&apos;d love to hear from you! Whether you have a question, a custom project in mind, or would like a quote, please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
+        <form class="row g-3" action="#" method="POST">  <!-- TODO: Replace with actual backend handler -->
+            <div class="col-md-6 pe-md-3 mask">
+                <label for="firstName" class="form-label req">First Name</label>
+                <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name" required>
             </div>
-            <div class="col-md-6">
-                <label for="exampleFormControlInput2" class="form-label">Last Name:</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Last Name" required>
+            <div class="col-md-6 mask">
+                <label for="lastName" class="form-label req">Last Name</label>
+                <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name" required>
             </div>
-            <div class="col-md-6">
-                <label for="exampleFormControlInput3" class="form-label">Email Address:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
+            <div class="col-md-6 pe-md-3 mask">
+                <label for="enterEmail" class="form-label req">Email Address</label>
+                <input type="email" name="enterEmail" class="form-control" id="enterEmail" placeholder="name@example.com" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
             </div>
-            <div class="col-md-6">
-                <label for="exampleFormControlInput4" class="form-label">Phone Number (optional):</label>
-                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="555-555-5555">
+            <div class="col-md-6 mask">
+                <label for="phoneNumber" class="form-label opt">Phone Number </label>
+                <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" pattern="^(\d{3}-\d{3}-\d{4}|\(\d{3}\)\s?\d{3}-\d{4}|\d{11})$" placeholder="555-555-5555 or (555)555-5555" title="Hint: Please use the format 555-555-5555, (555)555-5555, or 5555555555">
             </div>
-            <div class="col-md-12">
-                <label for="exampleFormControlInput5" class="form-label">Company or Organization (optional):</label>
-                <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Company">
+            <div class="col-md-12 mask">
+                <label for="organization" class="form-label opt">Company or Organization</label>
+                <input type="text" class="form-control" id="organization" name="organization" placeholder="Company or organization name">
             </div>
-            <!-- radio buttons -->
-            <fieldset class="col-md-6">
-                <legend class="text-large ps-0">Type of Inquiry:</legend>
+            <!-- Type of Inquiry (radio buttons) -->
+            <fieldset class="col-md-6 radio-button px-0">
+                <legend class="text-large ps-0 req">Type of Inquiry</legend>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="generalQuestion" value="general" required>
+                    <label class="form-check-label" for="generalQuestion">
                         General Question
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="requestQuote" value="quote">
+                    <label class="form-check-label " for="requestQuote">
                         Request a Quote
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="collaborationInquiry" value="collaboration">
+                    <label class="form-check-label" for="collaborationInquiry">
                         Collaboration Inquiry
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                    <label class="form-check-label" for="flexRadioDefault4">
+                    <input class="form-check-input visually-hidden" type="radio" name="inquiryType" id="otherQuestion" value="other">
+                    <label class="form-check-label" for="otherQuestion">
                         Other
                     </label>
                 </div>
             </fieldset>
-            <!-- checkboxes -->
-            <fieldset class="col-md-6">
-                <legend class="text-large ps-0">Which service are you intested in?:</legend>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                    <label class="form-check-label" for="flexCheckDefault1">
-                        Custom Embroidery
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                    <label class="form-check-label" for="flexCheckDefault12">
-                        Digitizing
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                    <label class="form-check-label" for="flexCheckDefault13">
-                        Varsity Jackets / Patches
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
-                    <label class="form-check-label" for="flexCheckDefault14">
-                        Contract Sewing
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                    <label class="form-check-label" for="flexCheckDefault15">
-                        Other / Not Sure
-                    </label>
-                </div>
+            <!-- Service Type (drop down menu) -->
+            <fieldset class="col-md-6 px-0">
+                <legend class="form-label text-large req">Which service are you interested in?</legend>
+                <select id="serviceType" name="serviceType" class="form-select px-3" required>
+                    <option value="" disabled selected>-- Click or tap to select a service --</option>
+                    <option value="custom_embroidery">Custom Embroidery</option>
+                    <option value="digitizing">Digitizing</option>
+                    <option value="VJ-patches">Varsity Jackets / Patches</option>
+                    <option value="contract-sewing">Contract Sewing</option>
+                    <option value="other-notsure">Other / Not Sure</option>
+                </select>
             </fieldset>
-            <!-- multiline textarea -->
-            <div class="mb-3">
-                <label for="tellus" class="form-label">Tell us about your project:</label>
-                <textarea class="form-control" id="tellus" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
+            <!-- Tell us (multiline textarea) -->
+            <div class="mb-3 mask">
+                <label for="tellUs" class="form-label req">Tell us about your project</label>
+                <textarea class="form-control text-large" id="tellUs" name="tellUs" rows="7" placeholder="Free text field - e.g. what you'd like made, quantity, colors, etc." required></textarea>
             </div>
-            <!-- list box -->
-            <fieldset class="mb-3">
-                <legend class="text-large ps-0">Preferred Delivery Timeline:</legend>
+            <!-- Timeline (list box) -->
+            <fieldset class="mb-3 px-0">
+                <legend class="text-large ps-0 opt">Preferred Delivery Timeline</legend>
                 <ul class="list-group list-box">
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-                        <label class="form-check-label px-3" for="firstRadio">No specific deadline</label>
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="no-deadline" id="noDeadline">
+                        <label class="form-check-label px-3" for="noDeadline">No specific deadline</label>
+                    </li>
+                    <li class="list-group-item list-group-item-action p-0 ">
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="one-week" id="oneWeek">
+                        <label class="form-check-label px-3" for="oneWeek">Extremely urgent - Within 1 week</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-                        <label class="form-check-label px-3" for="secondRadio">Extremely urgent - Within 1 week</label>
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="two-weeks" id="twoWeek">
+                        <label class="form-check-label px-3" for="twoWeek">Urgent - Within 2 weeks</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                        <label class="form-check-label px-3" for="thirdRadio">Urgent - Within 2 weeks</label>
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="one-month" id="oneMonth">
+                        <label class="form-check-label px-3" for="oneMonth">Within 1 month</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fourthRadio">
-                        <label class="form-check-label px-3" for="fourthRadio">Within 1 month</label>
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="three-months" id="threeMonth">
+                        <label class="form-check-label px-3" for="threeMonth">Within 3 months</label>
                     </li>
                     <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fifthRadio">
-                        <label class="form-check-label px-3" for="fifthRadio">Within 3 month</label>
-                    </li>
-                    <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="sixthRadio">
-                        <label class="form-check-label px-3" for="sixthRadio">Within 6 month</label>
-                    </li>
-                    <li class="list-group-item list-group-item-action p-0">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="seventhRadio">
-                        <label class="form-check-label px-3" for="seventhRadio">More than 6 months</label>
+                        <input class="form-check-input me-1 visually-hidden" type="radio" name="timeline" value="more-than-3months" id="moreThanThree">
+                        <label class="form-check-label px-3" for="moreThanThree">More than 3 months</label>
                     </li>
                 </ul>
             </fieldset>
-            <!-- multiline textarea -->
-            <div class="mb-3">
-                <label for="note" class="form-label">Additional Notes (optional):</label>
-                <textarea class="form-control" id="note" rows="7" placeholder="Free text field &#x2212; anything else we should know"></textarea>
-            </div>
-            <!-- drop down menu -->
-            <fieldset>
-                <legend for="source" class="form-label text-large">How did you hear about us? (optional):</label>
-                <select id="source" class="form-select" aria-label="Default select example">
-                    <option selected>Click or tap here</option>
-                    <option value="1">Google</option>
-                    <option value="2">instagram</option>
-                    <option value="3">Referral</option>
-                    <option value="4">Returning Customer</option>
-                    <option value="5">Other</option>
-                </select>
+            <!-- Referral source (checkboxes) -->
+             <fieldset class="col-md-12 px-0">
+                <legend class="text-large opt">How did you hear about us? (Select all that apply)</legend>
+                <div class="d-flex flex-wrap mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="google" id="google">
+                        <label class="form-check-label" for="google">Google</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="instagram" id="instagram">
+                        <label class="form-check-label" for="instagram">Instagram</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="referral" id="referral">
+                        <label class="form-check-label" for="referral">Referral</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="returningCustomer" id="returningCustomer">
+                        <label class="form-check-label" for="returningCustomer">Returning&nbsp;Customer</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input visually-hidden" type="checkbox" name="referralSource[]" value="Other" id="otherReason">
+                        <label class="form-check-label" for="otherReason">Other</label>
+                    </div>
+                </div>
             </fieldset>
             <div class="d-grid gap-2 d-md-block text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
+</main>
+<!-- Mailing address and map section -->
+<section class="mint-bg">
     <div class="container py-5">
-        <h2>H2</h2>
-        <h3>H3</h3>
-        <p>P (Text regular size)</p>
-        <p class="text-regular">text-small</p>
-        <p class="text-large">text-large</p>
-        <a href="#">Link</a><br><br>
-
-        <p>For all of the buttons, please enclose it in a DIV to make the button responsive.</p>
-        <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-primary">Primary Button</button></div><br>
-        <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-secondary">Secondary Button</button></div><br>
-        <div class="d-grid gap-2 d-md-block"><a href="#" class="btn btn-primary">Primary Link Button</a></div><br>
-        <div class="d-grid gap-2 d-md-block"><a href="#" class="btn btn-secondary">Secondary Link Button</a></div><br><br>
-        <div class="mint-bg py-5" ><p>mint-bg</p></div><br>
-        <div class="iris-bg py-5" ><p class="text-white">iris-bg and text-white</p></div><br>
-        <p>Please change page title around line 6</p>
-        <p>Please make your navigation menu link "active" (nav-link active) aroung line 35-50. This sample is "Home" active. (The other nav links are brighter color)</p>
+        <div class="row pb-4 pb-md-0">
+            <iframe class="col-md-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7479539479036!2d-117.12771862372988!3d32.95766327358873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf9cb5dcf5eb1%3A0x54d6ba67fa0b991f!2s13223-1%20Black%20Mountain%20Rd%20%23285%2C%20San%20Diego%2C%20CA%2092129!5e0!3m2!1sja!2sus!4v1748253575240!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Seams Creative map"></iframe>
+            <div class="pt-4 col-md-4 align-self-center text-center text-md-start">
+                <h2 class="mailbox-icon">Mailing Address</h2>
+                <p>
+                    13223-1 Black Mountain Rd. #285<br>
+                    San Diego, CA 92129
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- News Letter Section -->
+<section class="py-4">
+    <div class="container py-5">
+        <h3 class="text-center needle-icon">Subscribe to Our Newsletter</h3>
+        <form action="submit-form.php" method="POST" class="row"> <!-- TODO: Replace with actual backend handler -->
+                <div class="offset-md-3 col-md-5 mask">
+                    <label for="newsletterEmail" class="form-label visually-hidden">Email address</label>
+                    <input type="email" class="form-control" id="newsletterEmail" name="newsletterEmail" placeholder="Email Address" required pattern=".+@.+\..+" title="Hint: Please enter a valid email address">
+                </div>
+                <div class="col-md-2 d-grid gap-2 d-md-block mt-3 mt-md-0"><button type="submit" class="btn btn-primary">Subscribe</button></div>
+        </form>
     </div>
 </section>
 <!-- Footer -->
@@ -229,7 +222,7 @@
         <div class="container text-white fw-lighter fs-6 pt-4">
         <div class="row">
             <div class="col-12 col-lg-2 text-center text-lg-start order-1 order-lg-1 mb-4 mb-lg-0">
-                <a href="index.html"><img src="images/seams-creative-logo-white.svg" class="logo-white"></a>
+                <a href="index.html"><img src="images/seams-creative-logo-white.svg" class="logo-white" alt="Seams Creative Logo"></a>
             </div>
             <div class="col-12 col-lg-8 text-center order-2 order-lg-2">
                 <p>Custom Sewing · Embroidery · Digitizing · Patches &amp; More</p>
@@ -241,9 +234,9 @@
                 <p>&copy; Seams Creative All Rights Reserved</p>
             </div>
             <div class="col-12 col-lg-4 text-center text-lg-end fs-4 order-3 order-lg-last mb-4 mb-lg-0">
-                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube icon"></i></a>
             </div>
         </div>
     </div>

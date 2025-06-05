@@ -3,20 +3,20 @@ body {
     font-size: 1.2rem;
     background-color: #FCF9F8; /* Previous color #F1EFE4 */
 }
-h1 {
+h1, h2, h3 {
     font-family: "Merriweather", serif;
+}
+h1 {
     font-size: 1.8rem;
     color: white;
     background-color: #789181; /* Previous color #90B19B */
     text-align: center;
-    padding:5px;
+    padding:15px;
 }
 h2 {
-    font-family: "Merriweather", serif;
     font-size: 1.5rem;
 }
 h3 {
-    font-family: "Merriweather", serif;
     font-size: 1.3rem;
 }
 .text-small {
@@ -40,16 +40,11 @@ a:hover {
 .logo-link:hover {
     transform: none;
 }
-.fa-brands {
-    color: #fff;
-    padding:5px;
-}
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
 }
-#home .logo {
-    width: 100px;
-    margin: 10px;
+.home .logo {
+    margin-left: 10pt;
 }
 .logo, .logo-white {
     width: 100px;
@@ -71,9 +66,6 @@ a:hover {
     padding: 0.4rem 1.5rem;
     transition-duration: .4s;
 }
-.btn-primary:hover {
-    transform: scale(1.1);
-}
 .btn-secondary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #D15BAD;
@@ -91,7 +83,7 @@ a:hover {
     padding: 0.4rem 1.5rem;
     transition-duration: .4s;
 }
-.btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover, .icon:hover {
     transform: scale(1.1);
 }
 .mint-bg {
@@ -100,6 +92,7 @@ a:hover {
 .iris-bg {
     background-color: #3B4A7A;
 }
+/* -------------------- Footer -------------------- */
 .mail {
     color: #fff;
     transition: letter-spacing 0.3s;
@@ -111,40 +104,52 @@ a:hover {
 .icon {
     transition-duration: .4s;
 }
-.icon:hover {
-    transform: scale(1.1);
+.fa-brands {
+    color: #fff;
+    padding:5px;
 }
-/* home */
-#home h1 {
+/* -------------------- home -------------------- */
+.home h1 {
     color: black;
     background-color: transparent;
-    margin-top: 160pt;
+    margin-top: 250pt;
+    padding: 5px;
+}
+.home .logo {
+    padding-top: 8px;
+    margin-left: 12px;
+}
+.home .container-fluid {
+    padding-top: 12px;
 }
 #hero {
     background-image: url(../images/seams_creative_hero.jpg);
-    background-size: auto 250px;
+    background-size: auto 320px;
     background-position: top right;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #FCF9F8;
     background-repeat: no-repeat;
-    min-height: 250px;
+    min-height: 320px;
 }
-#home .card {
+/* Our Craft (Card setting) */
+.home .card {
     --bs-card-bg: none;
     --bs-card-border-width: 0;
     --bs-card-spacer-y: 0rem;
     --bs-card-spacer-x: 0rem;
     --bs-card-title-spacer-y: 1rem;
 }
-#home .card-img, #home .card-img-top {
+.home .card-img, .home .card-img-top {
     border-radius: 10pt;
     max-width: 426px;
     margin: auto;
 }
-#home video {
+/* Video */
+.home video {
     border-radius: 10pt;
     max-width: 230px;
 }
+/* Icon before H2 and H3  */
 .measure-icon::before, .sewing-machine-icon::before, .needle-icon::before, .mailbox-icon::before {
     content: '';
     display: inline-block;
@@ -163,6 +168,7 @@ a:hover {
 .needle-icon::before{
     background-image: url(../images/needle-icon.svg);
 }
+/* Animation - text sliding up */
 .animation-base {
     opacity: 0;
     transform: translateY(30px); 
@@ -186,103 +192,206 @@ a:hover {
         transform: translateY(0);
     }
 }
-/* Contact Us */
+/* -------------------- Services -------------------- */
+
+.services-section {
+    padding: 15px 0 10px 0;
+}
+
+.request-quote {
+    padding-bottom: 20px;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.mobile-hr{
+    height: 2px; 
+    background-color: #000;
+}
+/* -------------------- Portfolio -------------------- */
+.portfolio h1 {
+    margin-bottom: 0;
+}
+.lbname {
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
+}
+.lightbox-gallery .text-center {
+    padding-top: 1em;
+}
+div.intro {
+    margin-bottom: 0;
+}
+.lightbox-gallery {
+    background-image: linear-gradient(#A8DADC, #90B19B);
+    
+    background-repeat: no-repeat;color: #000;overflow-x: hidden;
+    /*background-color: #f5f5f0;*/
+}
+
+.lightbox-gallery p {
+    color:#000;
+}
+
+.lightbox-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:#fff;
+}
+
+.note {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 40px 0;   
+}
+.lightbox-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom:0;
+}
+
+.lightbox-gallery .photos {
+    padding-bottom:20px;
+}
+
+.lightbox-gallery .item {
+    padding-bottom:30px;
+}
+/* -------------------- About Us -------------------- */
+/* History Section */
+.history {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.history h2,
+.history p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.history-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.history-images img {
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #d3ecf0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.testimonial-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.testimonial-box img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+/* -------------------- Contact Us -------------------- */
 .mailbox-icon::before {
     background-image: url(../images/mailbox-icon.svg);
 }
-.req::before {
-    content: "Required";
+/* Required and Optional icon */
+.req::before, .opt::before {
     font-size: 0.9rem;
     padding: 2pt 5pt;
     margin-right: 10px;
     border-radius: 5pt;
     border: none; 
-    background-color:#E2725B;
     color: #fff;
     vertical-align:middle;
+}
+.req::before {
+    content: "Required";
+    background-color:#E2725B;
 }
 .opt::before {
     content: "Optional";
-    font-size: 0.9rem;
-    padding: 2pt 5pt;
-    margin-right: 10px;
-    border-radius: 5pt;
-    border: none; 
     background-color:#B0B0B0;
-    color: #fff;
-    vertical-align:middle;
 }
-#contactus input, #contactus textarea {
-    width: 100%;
-    box-sizing: border-box;
+/* Underline slidin animation */
+.contactus input, .contactus textarea, .contactus select, .home input {
     border-radius: 0px;
-    -webkit-appearance: none;
-    appearance: none;
 }
-#contactus input[type=radio], #contactus input[type=checkbox] { 
-    display: none;
-}
-#contactus .form-control {
-    border-bottom: 1px solid #ccc;
-    box-shadow: -2000px 5px 0px #ccc;
-    -webkit-transition: all 500ms;
+.contactus .form-control, .home .form-control {
+    border-bottom: 1px solid #B0B0B0;
+    box-shadow: -2000px 5px 0px #B0B0B0;
     transition: all 500ms;
 }
-#contactus .form-control:focus {
+.contactus .form-control:focus, .home .form-control:focus {
     border-bottom: 1px solid #fff;
     box-shadow: 0px 5px 0px #90B19B;
-    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
 .mask {
     overflow:hidden;
     padding: 0 0 10px 0;
 }
+/* Type of Inquiry (Radio button animation) */
 .radio-button input + label:before {
     display: inline-block;
     content: "";
     width: 20px;
     height: 20px;
     margin-right: 15px;
-    border:1px solid #CCC;
+    border:1px solid #B0B0B0;
     border-radius: 100px;
-    box-shadow: 5px 0px 0px #CCC;
-    -webkit-transition: all 500ms;
+    box-shadow: 5px 0px 0px #B0B0B0;
     transition: all 500ms;
 }
 .radio-button input:checked + label:before {
     border-radius: 100px;
     box-shadow: -5px 0px 0px #90B19B;
-    -webkit-transform: translateX(10px);
-    -ms-transform: translateX(10px);
     transform: translateX(10px);
-    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
-#contactus input[type=checkbox] + label {
-    font-size: 0.8rem;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 0px;
-    border:1px solid #ccc;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+/* Which service are you interested in? (Dropdown box setting) */
+.contactus select {
+    cursor: pointer;
 }
+.contactus .form-check {
+    padding-left: 0;
+    padding-right: 0;
+}
+.contactus .form-select {
+    border-bottom: 1px solid #B0B0B0;
+    box-shadow: 0 0 0 #B0B0B0;
+}
+/* Preferred Delivery Timeline (List box setting) */
 .list-group {
     height: 7rem;
     overflow: auto;
-}
-.list-group-item {
-    position: relative;
-    padding-left: 2.5rem; 
-    cursor: pointer;
-}
-.list-group-item input[type="checkbox"] {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
 }
 .list-group-item label {
     display: block;
@@ -290,26 +399,33 @@ a:hover {
     height: 100%;
     cursor: pointer;
 }
-#contactus .form-check, #contactus select {
-    padding-left: 0;
-    padding-right: 0;
-}
 .list-box .form-check-input:checked~label {
     font-weight:500;
-    background-color: #B0B0B0;
+    background-color :rgba(144,177,155,0.45);
     width: 100%;
-    color:#fff;
 }
-#contactus input[type=checkbox] + label {
+/* How did you hear about us? (Check box setting) */
+.contactus input[type=checkbox] + label {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 0px;
+    border:1px solid #B0B0B0;
+    transition: all 500ms;
     cursor: pointer;
 }
-#contactus input[type=checkbox]:checked + label {
+.contactus input[type=checkbox]:hover + label {
+    background-color: #ececec;
+    text-shadow: 0.1px 0.1px 0 rgba(0, 0, 0, 1);
+}
+.contactus input[type=checkbox]:checked + label {
+    font-weight:500;
     border-radius: 10px;
     border:1px solid rgba(144,177,155,0.45);
     background-color: rgba(144,177,155,0.45);
-    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
+/* map */
 iframe {
     width: 100%;
     height: 100%;
@@ -340,15 +456,26 @@ iframe {
 }
 
 /* Responsive */
+/* -------------------- Responsive -------------------- */
+/* width small or more (Home) */
 @media (min-width: 576px) {
-    #home .logo { 
+    .home .logo { 
         width: 150px;
+    }
+    .home h1 { 
+        margin-top: 320px;
         }
 }
+/* width less than midium (Portfolio) */
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px;
+    }
+}
+/* width midium or more (Home and All) */
 @media (min-width: 768px) {
-    #home h1 { 
-        margin-top: 270px;
-        }
     h1 {
         font-size: 2.1rem;
     }
@@ -358,18 +485,24 @@ iframe {
     h3 {
         font-size: 1.3rem;
     }
-    #hero {
+    .hero {
         background-size: auto 300px;
         min-height: 300px;
     }
 }
-   
+/* width large or more (Home) */
 @media (min-width: 992px) { 
-    #home h1 { 
-        margin-top: 0;
+    .home h1 { 
+        margin-top: 0px;
         } 
-    #hero {
+    .hero {
         background-size: auto 350px;
         min-height: 350px;
     }
+}
+/* width extra large or more (Home) */
+@media (min-width: 1200px) { 
+    .home h1 { 
+        margin-top: 20px;
+        } 
 }
