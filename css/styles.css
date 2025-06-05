@@ -432,29 +432,6 @@ iframe {
     min-height: 300px;
 }
 
-/* -------------------- Services -------------------- */
-
-.services-section {
-    padding: 15px 0 10px 0;
-}
-
-.request-quote {
-    padding-bottom: 20px;
-}
-
-.textarea {
-    height: 200px;
-}
-
-.submit-btn {
-    margin-top: 20px;
-}
-
-.mobile-hr{
-    height: 2px; 
-    background-color: #000;
-}
-
 /* Responsive */
 /* -------------------- Responsive -------------------- */
 /* width small or more (Home) */
