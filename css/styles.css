@@ -194,12 +194,84 @@ a:hover {
 }
 /* -------------------- Services -------------------- */
 
+.services-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .services-section {
     padding: 15px 0 10px 0;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left-md-up{
+    text-align: left;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.padding-right-md{
+    padding-right: 20px;
+}
+
+.product-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rounded-corners{
+    border-radius: 10px;
+}
+
+.text-align-left-md-up,
+.text-align-right-md-up,
+.text-align-center-md-up {
+    text-align: center;
+}
+
+.section-form-spacing{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .request-quote {
     padding-bottom: 20px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.radio-label{
+    margin-left: 10px;
+}
+
+.radio-option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-input {
+  margin-right: 0.5rem;
+  accent-color: #007bff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px; 
+  vertical-align: top;
 }
 
 .textarea {
@@ -466,6 +538,20 @@ iframe {
         background-size: auto 300px;
         min-height: 300px;
     }
+
+    .text-align-left-md-up {
+        text-align: left;
+    }
+
+    .text-align-right-md-up {
+        text-align: right;
+    }
+
+    .text-align-center-md-up {
+        text-align: center;
+    }
+
+
 }
 /* width large or more (Home) */
 @media (min-width: 992px) { 
